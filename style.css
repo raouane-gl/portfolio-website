@@ -1,0 +1,148 @@
+/* GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0f172a;
+    color: white;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background: #0f172a;
+    position: sticky;
+    top: 0;
+    border-bottom: 1px solid #1e293b;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #38bdf8;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #38bdf8;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #1e293b, #0f172a);
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    color: #cbd5e1;
+    margin-bottom: 20px;
+}
+
+.hero a {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #38bdf8;
+    color: black;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.hero a:hover {
+    transform: scale(1.05);
+}
+
+/* SECTIONS */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+h2 {
+    color: #38bdf8;
+    margin-bottom: 20px;
+}
+
+/* ABOUT */
+.about p {
+    max-width: 700px;
+    margin: auto;
+    color: #cbd5e1;
+}
+
+/* PROJECTS */
+.projects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 80%;
+    margin: auto;
+}
+
+.card {
+    background: #1e293b;
+    padding: 20px;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    background: #273449;
+}
+
+.card p {
+    color: #cbd5e1;
+}
+
+/* CONTACT */
+.contact p {
+    color: #cbd5e1;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+        padding: 15px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .projects {
+        grid-template-columns: 1fr;
+        width: 90%;
+    }
+}
