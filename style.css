@@ -46,6 +46,21 @@ body {
 }
 
 /* HERO */
+
+.profile-img {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.profile-img img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 3px solid #38bdf8;
+    object-fit: cover;
+}
+
 .hero {
     text-align: center;
     padding: 100px 20px;
@@ -53,8 +68,19 @@ body {
 }
 
 .hero h1 {
-    font-size: 42px;
-    margin-bottom: 10px;
+    font-size: 48px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .hero p {
@@ -118,6 +144,32 @@ h2 {
 .card p {
     color: #cbd5e1;
 }
+
+.skills {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.skill {
+    margin: 15px 0;
+    text-align: left;
+}
+
+.bar {
+    width: 100%;
+    background: #1e293b;
+    height: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.bar div {
+    height: 100%;
+    background: #38bdf8;
+    border-radius: 10px;
+}
+
 
 /* CONTACT */
 .contact p {
