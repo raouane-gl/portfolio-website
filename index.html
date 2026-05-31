@@ -16,23 +16,28 @@
     <ul class="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
         <li><a href="#contact">Contact</a></li>
     </ul>
+
+    <button onclick="toggleTheme()" class="theme-btn">Theme</button>
 </nav>
 
 <!-- HERO -->
 <section class="hero">
     <div class="profile-img">
-         <img src="profile.jpg" alt="Profile Photo">
+        <img src="profile.jpg" alt="Profile">
     </div>
+
     <h1>Hi, I'm Guellou Raouane 👋</h1>
     <p>Computer Science Student | AI Engineering</p>
-    <a href="cv.pdf" download class="cv-btn">Download CV</a>
-    <a href="https://github.com/raouane-gl" target="_blank">My GitHub</a>
+
+    <a href="https://github.com/raouane-gl" target="_blank">GitHub</a>
+    <a href="cv-raouane.pdf" download class="cv-btn">Download CV</a>
 </section>
 
 <!-- ABOUT -->
-<section class="about" id="about">
+<section id="about">
     <h2>About Me</h2>
     <p>
         Third-year Computer Science student specializing in Artificial Intelligence.
@@ -45,17 +50,20 @@
 
     <div class="card">
         <h3>E-commerce Website</h3>
-        <p>Frontend website using HTML, CSS, Tailwind CSS</p>
+        <p>HTML, CSS, Tailwind CSS</p>
+        <a href="https://github.com/raouane-gl" target="_blank">GitHub</a>
     </div>
 
     <div class="card">
         <h3>Quiz App</h3>
-        <p>Full-stack project using PHP and SQL</p>
+        <p>PHP, SQL Full-stack project</p>
+        <a href="https://github.com/raouane-gl" target="_blank">GitHub</a>
     </div>
 
 </section>
-    
-<section class="skills" id="skills">
+
+<!-- SKILLS -->
+<section id="skills" class="skills">
     <h2>Skills</h2>
 
     <div class="skill">
@@ -78,12 +86,13 @@
         <div class="bar"><div style="width: 75%"></div></div>
     </div>
 </section>
-    
+
 <!-- CONTACT -->
-<section class="contact" id="contact">
+<section id="contact">
     <h2>Contact</h2>
     <p>Email: guellouraouane@gmail.com</p>
 </section>
 
+<script src="script.js"></script>
 </body>
 </html>
